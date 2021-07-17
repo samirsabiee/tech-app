@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -13,12 +15,15 @@ export default {
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'}
+      {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'},
+      {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/vazir-font/29.1.0/font-face.css'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    "~assets/style.css"
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: "~/plugins/persian-date-picker", mode: "client" },],
@@ -27,7 +32,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/dotenv',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -39,7 +46,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://recruitment.deploysite.ir/api/',
+    baseURL: process.env.API_BASE_URL,
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
