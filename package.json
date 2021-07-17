@@ -17,5 +17,7 @@
     "jalali-moment": "^3.3.10",
     "nuxt": "^2.15.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1"
+  }
 }
