@@ -1,0 +1,13 @@
+<template>
+
+</template>
+
+<script>
+    export default {
+        name: "editProduct"
+    }
+</script>
+
+<style scoped>
+
+</style>
