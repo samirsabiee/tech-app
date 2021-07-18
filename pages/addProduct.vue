@@ -127,10 +127,7 @@
       ...mapGetters({
         products: 'product/all',
         categories: 'product/categories'
-      }),
-      titleValidation() {
-        return this.product.title !== null
-      }
+      })
     },
   }
 </script>
