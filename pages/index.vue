@@ -41,7 +41,7 @@
                             <a href="#">
                               <i class="fa fa-pencil mx-2 blue"></i>
                             </a>
-                            <nuxt-link :to="`/etProduct/${product.id}`" class="btn close-icon">
+                            <nuxt-link :to="`/editProduct/${product.id}`" class="btn close-icon">
                               <i class="fa fa-pen mx-2 red"></i>
                             </nuxt-link>
                             <button @click="delProduct(product.id)" class="close-icon">
