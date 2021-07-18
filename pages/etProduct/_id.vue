@@ -102,8 +102,7 @@
         this.$store.dispatch('product/update', this.product)
       },
       isRadioChecked(category) {
-        const isChecked = this.product.category === category
-        return isChecked
+        return this.product.category === category
       }
     },
 
