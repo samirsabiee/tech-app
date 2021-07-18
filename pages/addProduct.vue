@@ -82,9 +82,9 @@
         </b-form-radio>
       </b-form-radio-group>
 
-      <!--      <b-form-group label="تاریخ">-->
-      <!--        <date-picker :modal="true" from="1400" to="1500" :column="1" mode="single"></date-picker>-->
-      <!--      </b-form-group>-->
+            <b-form-group label="تاریخ">
+              <date-picker :modal="true" from="1400" to="1500" :column="1" mode="single"></date-picker>
+            </b-form-group>
 
       <b-button type="submit" variant="primary">ذخیره</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
